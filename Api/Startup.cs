@@ -91,6 +91,8 @@ public class Startup
         app.UseAuthentication();
         app.UseAuthorization();
 
+        app.UseCors("*");
+
         app.UseEndpoints(endpoints => {
 
             #region Home
